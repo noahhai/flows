@@ -14,7 +14,7 @@ default_args = {
     "retry_delay": timedelta(minutes=5),
 }
 
-company_onboarding = DAG('kube-operator',
+company_onboarding = DAG('kube-operator-2',
                          default_args=default_args,
                          schedule_interval=timedelta(days=1))
 with company_onboarding:
